@@ -1,0 +1,104 @@
+$color: #02CA00;
+$color2: #111;
+$margin: 2px;
+p{
+    margin-left: $margin;
+    span{
+      color:$color2;
+    }
+}
+/* operaciones con variables */
+div{
+  margin-top: $margin*2;
+  margin-left: $margin + 1;
+  margin-bottom: $margin / 2;
+  margin-right: 100px *6;
+  /*divisiones de valores fijos van entre parentesis*/
+  left: (100px / 2);
+}
+
+body{
+  background-color: $color;
+}
+
+.padre{
+background-color: $color;
+  &.hijo{
+    background-color: $color2;
+  }
+}
+
+.padre{
+background-color: $color;
+   .hijo{
+    background-color: $color2;
+  }
+}
+
+/*media queries */
+
+div{
+  background-color: $color;
+  @media screen and (min-width: 1025px){
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* existen algunas propiedades de sass que permiten aclarar
+u oscurecer los colores*/
+
+/* los hace mas claros*/
+.lighten{
+  background-color: lighten($color,10%);
+}
+
+/*los hace mas oscuros*/
+
+.darken{
+  background-color: darken($color, 50%);
+
+
+}
+ /*los colores  saturados */
+
+.saturate{
+    background-color: saturate($color, 70%);
+}
+
+/*desatura los colores*/
+.desaturate{
+  background-color: desaturate($color,10%);
+}
+
+/* transparencia como en css normal pero  nos acepta cualquier valor
+ de color y no nos pide los tres valores*/
+
+ .rgba{
+   background-color: rgba(red,0.5);
+   background-color: rgba($color,0.5);
+ }
+
+/*invierte el color */
+.invert{
+  background-color: invert($color);
+}
+
+/*busca el color complementario*/
+.complement{
+  background-color: complement($color);
+}
+
+/* Mixin Trozos de código que despues puedes reutilizar es como una
+variable que en vez de solo guardar un solo valor guarda todo un trozo de
+código*/
+
+@mixin primero {
+  border-radius: 20px;
+  background-color: red;
+}
+
+/*incluimos el mixin en una clase*/
+.prueba{
+  @include  primero 
+}

@@ -1,0 +1,98 @@
+@charset "UTF-8";
+p {
+  margin-left: 2px;
+}
+
+p span {
+  color: #111;
+}
+
+/* operaciones con variables */
+div {
+  margin-top: 4px;
+  margin-left: 3px;
+  margin-bottom: 1px;
+  margin-right: 600px;
+  /*divisiones de valores fijos van entre parentesis*/
+  left: 50px;
+}
+
+body {
+  background-color: #02CA00;
+}
+
+.padre {
+  background-color: #02CA00;
+}
+
+.padre.hijo {
+  background-color: #111;
+}
+
+.padre {
+  background-color: #02CA00;
+}
+
+.padre .hijo {
+  background-color: #111;
+}
+
+/*media queries */
+div {
+  background-color: #02CA00;
+}
+
+@media screen and (min-width: 1025px) {
+  div {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+/* existen algunas propiedades de sass que permiten aclarar
+u oscurecer los colores*/
+/* los hace mas claros*/
+.lighten {
+  background-color: #03fd00;
+}
+
+/*los hace mas oscuros*/
+.darken {
+  background-color: black;
+}
+
+/*los colores  saturados */
+.saturate {
+  background-color: #02ca00;
+}
+
+/*desatura los colores*/
+.desaturate {
+  background-color: #0cc00a;
+}
+
+/* transparencia como en css normal pero  nos acepta cualquier valor
+ de color y no nos pide los tres valores*/
+.rgba {
+  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(2, 202, 0, 0.5);
+}
+
+/*invierte el color */
+.invert {
+  background-color: #fd35ff;
+}
+
+/*busca el color complementario*/
+.complement {
+  background-color: #c800ca;
+}
+
+/* Mixin Trozos de código que despues puedes reutilizar es como una
+variable que en vez de solo guardar un solo valor guarda todo un trozo de
+código*/
+/*incluimos el mixin en una clase*/
+.prueba {
+  border-radius: 20px;
+  background-color: red;
+}
