@@ -96,3 +96,113 @@ código*/
   border-radius: 20px;
   background-color: red;
 }
+
+/* a los mixin tambien se les puede pasar parametros*/
+.prueba2 {
+  border-radius: 2px;
+  background-color: red;
+  border: 30px;
+}
+
+/* en Sass se pueden crear ciclos  */
+/*la diferencia entre "through" y "to" es que "to" no toma en cuenta el ultimo
+  numero mientras que "through" si*/
+.miclase-20 {
+  width: 20px;
+}
+
+.miclase-40 {
+  width: 40px;
+}
+
+.miclase-60 {
+  width: 60px;
+}
+
+.miclase-80 {
+  width: 80px;
+}
+
+.miclase-100 {
+  width: 100px;
+}
+
+.movil-20 {
+  width: 20px;
+}
+
+.movil-40 {
+  width: 40px;
+}
+
+.movil-60 {
+  width: 60px;
+}
+
+.movil-80 {
+  width: 80px;
+}
+
+.movil-100 {
+  width: 100px;
+}
+
+.tablet-20 {
+  width: 20px;
+}
+
+.tablet-40 {
+  width: 40px;
+}
+
+.tablet-60 {
+  width: 60px;
+}
+
+.tablet-80 {
+  width: 80px;
+}
+
+.tablet-100 {
+  width: 100px;
+}
+
+.hd-20 {
+  width: 20px;
+}
+
+.hd-40 {
+  width: 40px;
+}
+
+.hd-60 {
+  width: 60px;
+}
+
+.hd-80 {
+  width: 80px;
+}
+
+.hd-100 {
+  width: 100px;
+}
+
+.web-20 {
+  width: 20px;
+}
+
+.web-40 {
+  width: 40px;
+}
+
+.web-60 {
+  width: 60px;
+}
+
+.web-80 {
+  width: 80px;
+}
+
+.web-100 {
+  width: 100px;
+}

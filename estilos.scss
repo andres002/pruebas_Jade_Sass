@@ -100,5 +100,36 @@ código*/
 
 /*incluimos el mixin en una clase*/
 .prueba{
-  @include  primero 
+  @include  primero
 }
+
+
+/* a los mixin tambien se les puede pasar parametros*/
+
+
+@mixin segundo($borde, $colorcito, $variable) {
+  border-radius: $borde;
+  background-color: $colorcito;
+  border: $variable;
+}
+
+.prueba2{
+  @include segundo(2px,red,30px);
+}
+ /* en Sass se pueden crear ciclos  */
+  /*la diferencia entre "through" y "to" es que "to" no toma en cuenta el ultimo
+  numero mientras que "through" si*/
+ @for $i from 1 through 5{
+   .miclase-#{$i*20}{
+    width: $i*20px;
+   }
+ }
+
+
+ @each $mq in movil,tablet, hd, web{
+    @for $r from 1 through 5{
+       .#{$mq}-#{$r*20}{
+          width: $r*20px;
+       }
+     }
+ }
