@@ -206,3 +206,76 @@ código*/
 .web-100 {
   width: 100px;
 }
+
+/*podemos tambien crear maps y usar mediaqueries*/
+@media all and (min-width: 480px) {
+  .phone-20 {
+    width: 20px;
+  }
+  .phone-40 {
+    width: 40px;
+  }
+  .phone-60 {
+    width: 60px;
+  }
+  .phone-80 {
+    width: 80px;
+  }
+  .phone-100 {
+    width: 100px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .tablet-20 {
+    width: 20px;
+  }
+  .tablet-40 {
+    width: 40px;
+  }
+  .tablet-60 {
+    width: 60px;
+  }
+  .tablet-80 {
+    width: 80px;
+  }
+  .tablet-100 {
+    width: 100px;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .web-20 {
+    width: 20px;
+  }
+  .web-40 {
+    width: 40px;
+  }
+  .web-60 {
+    width: 60px;
+  }
+  .web-80 {
+    width: 80px;
+  }
+  .web-100 {
+    width: 100px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .hd-20 {
+    width: 20px;
+  }
+  .hd-40 {
+    width: 40px;
+  }
+  .hd-60 {
+    width: 60px;
+  }
+  .hd-80 {
+    width: 80px;
+  }
+  .hd-100 {
+    width: 100px;
+  }
+}

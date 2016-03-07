@@ -133,3 +133,20 @@ código*/
        }
      }
  }
+/*podemos tambien crear maps y usar mediaqueries*/
+$sizes:(
+  phone:480px,
+  tablet:768px,
+  web:1020px,
+  hd:1400px
+);
+
+@each $valor-primero,$valor-segundo in $sizes{
+  @media all and (min-width: #{$valor-segundo}){
+     @for $r from 1 through 5{
+        .#{$valor-primero}-#{$r*20}{
+           width: $r*20px;
+        }
+      }
+    }
+}
